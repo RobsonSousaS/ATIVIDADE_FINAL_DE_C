@@ -43,7 +43,7 @@ Após compilar a aplicação, executar:
 ``` 
 make run 
 ```
-##All
+## All
 Também é possível compilar e executar, simplesmente chamando o script make:
 
 ``` 
