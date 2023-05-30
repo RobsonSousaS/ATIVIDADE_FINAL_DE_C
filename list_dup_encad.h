@@ -13,6 +13,7 @@ void leiAddEnd(list_dupl_encad** lista, int valor);
 void leiAddIni(list_dupl_encad** lista, int valor);
 void leiprintList(list_dupl_encad** lista);
 void leiDest(list_dupl_encad* lista);
+void leiRemoveEnd(list_dupl_encad** lista);
 
 
 #endif

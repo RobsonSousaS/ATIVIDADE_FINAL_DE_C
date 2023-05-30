@@ -21,15 +21,15 @@ void leiDest(list_dupl_encad* lista){
 void leiAddEnd(list_dupl_encad** lista, int valor) {
     list_dupl_encad* novoNo = (list_dupl_encad*)malloc(sizeof(list_dupl_encad));
     novoNo->valor = valor;
-    novoNo->prox = NULL;
-    novoNo->prev = NULL;
+    novoNo->prox = 0;
+    novoNo->prev = 0;
 
-    if (*lista == NULL) {
+    if (*lista == 0) {
         *lista = novoNo;
     } else {
         list_dupl_encad* atual = *lista;
 
-        while (atual->prox != NULL) {
+        while (atual->prox != 0) {
             atual = atual->prox;
         }
         atual->prox = novoNo;
@@ -41,9 +41,9 @@ void leiAddIni(list_dupl_encad** lista, int valor) {
     list_dupl_encad* novoNo = (list_dupl_encad*)malloc(sizeof(list_dupl_encad));
     novoNo->valor = valor;
     novoNo->prox = *lista;
-    novoNo->prev = NULL;
+    novoNo->prev = 0;
 
-    if (*lista != NULL) {
+    if (*lista != 0) {
         (*lista)->prev = novoNo;
     }
 
@@ -58,4 +58,25 @@ void leiprintList(list_dupl_encad** lista) {
         atual = atual->prox;
     }
     printf("\n");
+}
+
+void leiRemoveEnd(list_dupl_encad** lista) {
+    if (*lista == 0) {
+        return; 
+    }
+
+    if ((*lista)->prox == 0) {
+        free(*lista);
+        *lista = 0;
+        return; 
+        }
+
+    list_dupl_encad* atual = *lista;
+
+    while (atual->prox != 0) {
+        atual = atual->prox;
+    }
+
+    atual->prev->prox = 0;
+    free(atual);
 }

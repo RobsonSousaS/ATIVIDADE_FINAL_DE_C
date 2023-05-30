@@ -9,6 +9,8 @@ void ListFunc(){
     leiAddEnd(&lista, 3);
     leiAddIni(&lista,10);
     leiprintList(&lista);
+    leiRemoveEnd(&lista);
+    leiprintList(&lista);
     leiDest(lista);
 }
 
