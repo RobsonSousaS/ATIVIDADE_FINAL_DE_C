@@ -8,7 +8,8 @@ Este é uma atividade de implementação de uma lista duplamente encadeada em C.
 - `leiAddEnd(&lista, inteiro);`: Insere um novo elemento no fim da lista.
 - `leiAddIni(&lista, inteiro);`: Insere um novo elemento no inicio da lista.
 - `leiprintList(&lista);`: Imprime os elementos da lista.
-- `leiDest(lista);`: Destroi os elementos da lista e limpa a memoria.
+- `leiDest(&lista);`: Destroi os elementos da lista e limpa a memoria.
+- `leiRemoveEnd(&lista);`: Remove ultimo node da lista.
 
 ## Exemplo de Uso
 
@@ -29,6 +30,10 @@ Este é uma atividade de implementação de uma lista duplamente encadeada em C.
     #Destruindo lista
     leiDest(lista);
     #Saida(10 25 2 3)
+
+    #Removendo Ultimo Node da lisa
+    leiRemoveEnd(&lista);
+
    ```
    
 ## Compilação
@@ -56,4 +61,4 @@ Se você encontrar algum problema ou tiver sugestões de melhoria, sinta-se à v
 
 ## Licença
 
-Este projeto está licenciado sob a (NULL)
+Este projeto está licenciado sob a (ANULLBIS)
