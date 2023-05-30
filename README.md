@@ -4,9 +4,9 @@ Este é uma atividade de implementação de uma lista duplamente encadeada em C.
 
 ## Funcionalidades
 
-- `list_dupl_encad* lista = leiIni(valor);`: Insere um novo elemento no início da lista.
-- `leiAddEnd(&lista, valor);`: Insere um novo elemento no fim da lista.
-- `leiAddIni(&lista,10);`: Insere um novo elemento no inicio da lista.
+- `list_dupl_encad* lista = leiIni(inteiro);`: Insere um novo elemento no início da lista.
+- `leiAddEnd(&lista, inteiro);`: Insere um novo elemento no fim da lista.
+- `leiAddIni(&lista, inteiro);`: Insere um novo elemento no inicio da lista.
 - `leiprintList(&lista);`: Imprime os elementos da lista.
 - `leiDest(lista);`: Destroi os elementos da lista e limpa a memoria.
 
