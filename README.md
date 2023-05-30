@@ -30,6 +30,25 @@ Este é uma atividade de implementação de uma lista duplamente encadeada em C.
     leiDest(lista);
     #Saida(10 25 2 3)
    ```
+   
+## Compilação
+Para compilar, executar no terminal:
+
+``` 
+make compile 
+```
+## Testes
+Após compilar a aplicação, executar:
+
+``` 
+make run 
+```
+##All
+Também é possível compilar e executar, simplesmente chamando o script make:
+
+``` 
+make
+```
 
 ## Contribuição
 
