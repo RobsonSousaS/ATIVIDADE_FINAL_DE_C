@@ -11,6 +11,7 @@ Este é uma atividade de implementação de uma lista duplamente encadeada em C.
 - `leiDest(&lista);`: Destroi os elementos da lista e limpa a memoria.
 - `leiRemoveEnd(&lista);`: Remove ultimo node da lista.
 - `leiRemoveIni(&lista);`: Remove primeiro node da lista.
+- `inserePosicao(&lista, valor, posicao);`: Insere o nó com o valor na posição inserida pelo user.
 
 
 ## Exemplo de Uso
@@ -28,16 +29,19 @@ Este é uma atividade de implementação de uma lista duplamente encadeada em C.
     
     #Printando a lista
     leiprintList(&lista);
+    #Saida(10 25 2 3)
     
     #Destruindo lista
     leiDest(lista);
-    #Saida(10 25 2 3)
 
     #Removendo Ultimo Node da lista
     leiRemoveEnd(&lista);
 
     #Removendo Primeiro Node da lista
     leiRemoveIni(&lista);
+
+    #Inserindo valor na posição indicada pelo usuario
+    inserePosicao(&lista, valor, posicao);
 
    ```
    

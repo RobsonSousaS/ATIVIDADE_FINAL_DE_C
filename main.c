@@ -13,6 +13,8 @@ void ListFunc(){
     leiprintList(&lista);
     leiRemoveIni(&lista);
     leiprintList(&lista);
+    leiInsertPos(&lista, 10, 2);
+    leiprintList(&lista);
     leiDest(lista);
 }
 

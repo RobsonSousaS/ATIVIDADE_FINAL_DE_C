@@ -96,3 +96,38 @@ void leiRemoveIni(list_dupl_encad** lista) {
 
     free(noRemovido);
 }
+
+void leiInsertPos(list_dupl_encad** lista, int valor, int posicao) {
+    if (posicao <= 0) {
+        leiAddIni(lista, valor);
+    } else {
+        list_dupl_encad* novoNo = (list_dupl_encad*)malloc(sizeof(list_dupl_encad));
+        novoNo->valor = valor;
+        novoNo->prox = 0;
+        novoNo->prev = 0;
+
+        list_dupl_encad* atual = *lista;
+        int contador = 1;
+
+        while (atual != 0 && contador < posicao) {
+            atual = atual->prox;
+            contador++;
+        }
+
+        if (atual == 0) {
+            leiAddEnd(lista, valor);
+        } else {
+            novoNo->prox = atual;
+            novoNo->prev = atual->prev;
+
+            if (atual->prev != 0) {
+                atual->prev->prox = novoNo;
+            }
+            atual->prev = novoNo;
+            
+            if (posicao == 1) {
+                *lista = novoNo;
+            }
+        }
+    }
+}
