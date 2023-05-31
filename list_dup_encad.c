@@ -131,3 +131,32 @@ void leiInsertPos(list_dupl_encad** lista, int valor, int posicao) {
         }
     }
 }
+void leiRemovePos(list_dupl_encad** lista, int posicao) {
+    if (*lista == 0 || posicao <= 0) {
+        return;
+    }
+
+    list_dupl_encad* atual = *lista;
+    int contador = 1;
+
+    while (atual != 0 && contador < posicao) {
+        atual = atual->prox;
+        contador++;
+    }
+
+    if (atual == 0) {
+        return;
+    }
+
+    if (atual->prev != 0) {
+        atual->prev->prox = atual->prox;
+    } else {
+        *lista = atual->prox;
+    }
+
+    if (atual->prox != 0) {
+        atual->prox->prev = atual->prev;
+    }
+
+    free(atual);
+}
