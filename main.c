@@ -17,6 +17,14 @@ void ListFunc(){
     leiprintList(&lista);
     leiRemovePos(&lista, 3);
     leiprintList(&lista);
+    int valIni = leiConsultIni(lista);
+    printf("%d\n", valIni);
+    int valEnd = leiConsultEnd(lista);
+    printf("%d\n", valEnd);
+    int valPos = leiConsultPos(lista, 2);
+    printf("%d\n", valPos);
+    int valTam = leiConsutTam(lista);
+    printf("%d\n", valTam);
     leiDest(lista);
 }
 

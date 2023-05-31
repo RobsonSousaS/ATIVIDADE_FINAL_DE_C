@@ -17,6 +17,9 @@ void leiRemoveEnd(list_dupl_encad** lista);
 void leiRemoveIni(list_dupl_encad** lista);
 void leiInsertPos(list_dupl_encad** lista, int valor, int posicao);
 void leiRemovePos(list_dupl_encad** lista, int posicao);
-
+int leiConsultIni(list_dupl_encad* lista);
+int leiConsultEnd(list_dupl_encad* lista);
+int leiConsultPos(list_dupl_encad* lista, int posicao);
+int leiConsutTam(list_dupl_encad* lista);
 
 #endif
