@@ -10,6 +10,8 @@ Este é uma atividade de implementação de uma lista duplamente encadeada em C.
 - `leiprintList(&lista);`: Imprime os elementos da lista.
 - `leiDest(&lista);`: Destroi os elementos da lista e limpa a memoria.
 - `leiRemoveEnd(&lista);`: Remove ultimo node da lista.
+- `leiRemoveIni(&lista);`: Remove primeiro node da lista.
+
 
 ## Exemplo de Uso
 
@@ -31,8 +33,11 @@ Este é uma atividade de implementação de uma lista duplamente encadeada em C.
     leiDest(lista);
     #Saida(10 25 2 3)
 
-    #Removendo Ultimo Node da lisa
+    #Removendo Ultimo Node da lista
     leiRemoveEnd(&lista);
+
+    #Removendo Primeiro Node da lista
+    leiRemoveIni(&lista);
 
    ```
    

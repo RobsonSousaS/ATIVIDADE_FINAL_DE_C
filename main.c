@@ -11,6 +11,8 @@ void ListFunc(){
     leiprintList(&lista);
     leiRemoveEnd(&lista);
     leiprintList(&lista);
+    leiRemoveIni(&lista);
+    leiprintList(&lista);
     leiDest(lista);
 }
 

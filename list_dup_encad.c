@@ -81,3 +81,18 @@ void leiRemoveEnd(list_dupl_encad** lista) {
     atual->prev->prox = 0;
     free(atual);
 }
+
+void leiRemoveIni(list_dupl_encad** lista) {
+    if (*lista == 0) {
+        return;
+    }
+
+    list_dupl_encad* noRemovido = *lista;
+    *lista = (*lista)->prox;
+
+    if (*lista != 0) {
+        (*lista)->prev = 0;
+    }
+
+    free(noRemovido);
+}
