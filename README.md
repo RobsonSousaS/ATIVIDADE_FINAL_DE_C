@@ -8,15 +8,15 @@ Esta é uma atividade de implementação de uma lista duplamente encadeada em C.
 - `leiAddEnd(&lista, inteiro);`: Insere um novo elemento no fim da lista.
 - `leiAddIni(&lista, inteiro);`: Insere um novo elemento no inicio da lista.
 - `leiprintList(&lista);`: Imprime os elementos da lista.
-- `leiDest(&lista);`: Destroi os elementos da lista e limpa a memoria.
+- `leiDest(&lista);`: Destrói os elementos da lista e limpa a memoria.
 - `leiRemoveEnd(&lista);`: Remove ultimo node da lista.
 - `leiRemoveIni(&lista);`: Remove primeiro node da lista.
 - `leiInsertPos(&lista, valor, posicao);`: Insere o nó com o valor na posição inserida pelo user.
 - `leiRemovePos(&lista, posicao);`: remove o nó na posição inserida pelo user.
-- `int valIni = leiConsultIni(lista);`: Consulta o valor inicial da lista
-- `int valEnd = leiConsultEnd(lista);`: Consulta o valor final da lista
-- `int valPos = leiConsultPos(lista, posicao);`: Consulta o valor na posição indicada pelo usuario na lista
-- `int valTam = leiConsultTam(lista);`: Consulta o total de valores nas lista
+- `int valIni = leiConsultIni(lista);`: Consulta o valor inicial da lista.
+- `int valEnd = leiConsultEnd(lista);`: Consulta o valor final da lista.
+- `int valPos = leiConsultPos(lista, posicao);`: Consulta o valor na posição indicada pelo usuário na lista.
+- `int valTam = leiConsultTam(lista);`: Consulta o total de valores nas lista.
 
 
 ## Exemplo de Uso
@@ -45,19 +45,19 @@ Esta é uma atividade de implementação de uma lista duplamente encadeada em C.
     #Removendo Primeiro Node da lista
     leiRemoveIni(&lista);
 
-    #Inserindo valor na posição indicada pelo usuario
+    #Inserindo valor na posição indicada pelo usuário
     leiInsertPos(&lista, 20, 2);
 
-    #Remove valor na posição indicada pelo usuario
+    #Remove valor na posição indicada pelo usuário
     leiRemovePos(&lista, 1);
 
-    #Faz a cosulta ao valor inicial da lista
+    #Faz a consulta ao valor inicial da lista
     int valIni = leiConsultIni(lista);
     
-    #Faz a cosulta ao valor final da lista
+    #Faz a consulta ao valor final da lista
     int valEnd = leiConsultEnd(lista);
     
-    #Faz a cosulta ao valor indicado pelo usuario na lista
+    #Faz a consulta ao valor indicado pelo usuário na lista
     int valPos = leiConsultPos(lista, posicao);
     
     #Indica quantos valores existem dentro da lista
