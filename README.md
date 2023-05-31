@@ -12,7 +12,7 @@ Esta é uma atividade de implementação de uma lista duplamente encadeada em C.
 - `leiRemoveEnd(&lista);`: Remove ultimo node da lista.
 - `leiRemoveIni(&lista);`: Remove primeiro node da lista.
 - `leiInsertPos(&lista, valor, posicao);`: Insere o nó com o valor na posição inserida pelo user.
-- `leiRemovePos(&lista, posicao);`: remove o nó na posição inserida pelo user.
+- `leiRemovePos(&lista, posicao);`: Remove o nó na posição inserida pelo user.
 - `int valIni = leiConsultIni(lista);`: Consulta o valor inicial da lista.
 - `int valEnd = leiConsultEnd(lista);`: Consulta o valor final da lista.
 - `int valPos = leiConsultPos(lista, posicao);`: Consulta o valor na posição indicada pelo usuário na lista.
