@@ -1,3 +1,4 @@
+// repetição em c?
 #include "list_dup_encad.h"
 #include <stdlib.h>
 #include <stdio.h>
