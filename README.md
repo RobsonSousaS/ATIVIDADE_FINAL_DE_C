@@ -1,3 +1,4 @@
+Equipe: Robson Sousa da Silva, Rubens Abraão da Silva Sousa, Igor Ramses Temoteo dos Santos
 # Lista Duplamente Encadeada
 
 Esta é uma atividade de implementação de uma lista duplamente encadeada em C. Uma lista duplamente encadeada é uma estrutura de dados na qual cada nó possui um ponteiro para o próximo nó e um ponteiro para o nó anterior.
